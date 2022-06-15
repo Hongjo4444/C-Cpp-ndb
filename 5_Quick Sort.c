@@ -15,11 +15,11 @@ void quickSort(int *data,int start,int end)
     int temp;
     while(i<=j) //엇갈리지 않을 경우 반복
     {
-        while(data[i]<=data[pivot]) //왼쪽 값이 피벗값보다 작을 경우 반복
+        while(data[i]<=data[pivot]) //왼쪽 값이 피벗값보다 작을 경우 반복하며 인덱스 위치 찾기
         {
             i++;
         }
-        while(data[j]>=data[pivot] && j>start) //오른쪽 값이 피벗값보다 클 경우 반복(start보다 더 가지않게 설정)
+        while(data[j]>=data[pivot] && j>start) //오른쪽 값이 피벗값보다 클 경우 반복하며 인덱스 위치 찾기 + start보다 더 가지않게 설정
         {
             j--;
         }
