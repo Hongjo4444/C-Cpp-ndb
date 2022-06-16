@@ -106,5 +106,39 @@
     }
 
 
-5.변수가 3개일때 pair 라이브러리를 이용한 특정한 변수를 기준으로 정렬-코딩테스트에서 사용O
+5.변수가 3개일때 pair 라이브러리를 이용한(이중 pair 사용) 특정한 변수를 기준으로 정렬-코딩테스트에서 사용O
 
+    #include <iostream>
+    #include <algorithm>
+    #include <vector>
+
+    using namespace std;
+
+    bool compare(pair<string,pair<int,int> > a,pair<string,pair<int,int> > b)
+    {
+        if(a.second.first==b.second.first) //성적이 같다면
+        {
+            return a.second.second > b.second.second; //더 어린 학생이 앞으로 오도록 설정
+        }
+        else //성적이 다르다면
+        {
+            return a.second.first > b.second.first; //더 높은 점수가 앞으로 오도록 설정
+        }
+    }
+
+    int main(void)
+    {
+        vector<pair<string,pair<int,int> > > v; //이중 pair(이름,성적,생년월일) 사용
+        v.push_back(pair<string,pair<int,int> >("홍",pair<int,int>(95,19931214)));
+        v.push_back(pair<string,pair<int,int> >("지",pair<int,int>(94,19931215)));
+        v.push_back(pair<string,pair<int,int> >("호",pair<int,int>(94,19951216)));
+        v.push_back(pair<string,pair<int,int> >("홍지",pair<int,int>(92,19931217)));
+        v.push_back(pair<string,pair<int,int> >("지호",pair<int,int>(91,19931218)));
+
+        sort(v.begin(),v.end(),compare); //compare로 성적이 같을경우, 더 어린 학생이 앞으로 오도록 기준 설정
+
+        for(int i=0;i<v.size();i++)
+        {
+            cout << v[i].first << " "; //정렬된 학생의 이름만 출력
+        }
+    }
