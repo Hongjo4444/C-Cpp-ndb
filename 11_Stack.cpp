@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	stack<int> s; //스택 정의
+	stack<int> s; //스택 정의(스택은 가장 먼저 들어온 것이 가장 나중에 나감)
 	s.push(7);
 	s.push(5);
 	s.push(4);
