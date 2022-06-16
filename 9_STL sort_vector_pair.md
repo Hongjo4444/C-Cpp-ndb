@@ -80,7 +80,31 @@
     }
 
 
-4.pair 라이브러리를 이용한 특정한 변수를 기준으로 정렬-코딩테스트에서 사용O
+4.변수가 2개일때 pair 라이브러리를 이용한 특정한 변수를 기준으로 정렬-코딩테스트에서 사용O
+
+    #include <iostream>
+    #include <algorithm>
+    #include <vector> //연결리스트 형태로 표현되는 vector 헤더파일(단순 배열과 vector는 큰 차이가 없음)
+
+    using namespace std;
+
+    int main(void)
+    {
+        vector<pair<int,string> > v; //한 쌍(2개)의 데이터를 다루기위해 사용하는 라이브러리
+        v.push_back(pair<int,string>(95,"홍")); //push_back():리스트의 마지막 부분에 삽입하는 vector에 붙어있는 함수
+        v.push_back(pair<int,string>(94,"지"));
+        v.push_back(pair<int,string>(93,"호"));
+        v.push_back(pair<int,string>(92,"홍지"));
+        v.push_back(pair<int,string>(91,"지호"));
+
+        sort(v.begin(),v.end()); //begin():첫번째 값, end():마지막 값
+
+        for(int i=0;i<v.size();i++) //size():vector의 크기를 가져오는데 사용하는 vector에 붙어있는 함수
+        {
+            cout << v[i].second << " "; //second:두번째 값(여기에선 string)을 의미
+        }
+    }
 
 
+5.변수가 3개일때 pair 라이브러리를 이용한 특정한 변수를 기준으로 정렬-코딩테스트에서 사용O
 
