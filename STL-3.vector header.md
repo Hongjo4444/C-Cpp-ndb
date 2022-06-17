@@ -26,13 +26,58 @@
     }
 
 2.vector의 iterator
+v.begin() : 백터 시작점의 주소 값 반환
+v.end() : 백터 (끝부분 + 1) 주소값 반환
+v.rbegin() : revers begin, 백터의 끝 지점을 시작점으로 반환 
+v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환 
 
-    v.begin() : 백터 시작점의 주소 값 반환
-    v.end() : 백터 (끝부분 + 1) 주소값 반환
-    v.rbegin() : revers begin, 백터의 끝 지점을 시작점으로 반환 
-    v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환 
+    #include <iostream>
+    #include <vector>
+    #include <algorithm>
+    #include <functional> //함수자 less<>,greater<> 쓸때 필요
 
-    3.vector의 요소 접근
+    using namespace std;
+
+    int main()
+    {
+        vector<int> v(5);
+        cout << v.size() << ":" << v.capacity() << endl; //size는 저장된 데이터 요소의 수, capacity는 할당된 메모리 공간의 크기
+        for(int i=0;i<v.size();i++)
+        {
+            cout << v[i] << " ";
+        }
+        cout << endl;
+
+        for(int i=0;i<v.size();i++) //원소 추가
+        {
+            v[i]=i+1;       
+        }
+        for(int i=0;i<5;i++)
+        {
+            v.push_back(10-i);
+        }
+        for(int i=0;i<v.size();i++) //출력
+        {
+            cout << v[i] << " ";
+        }
+        cout << endl;
+
+        sort(v.begin(),v.end(),greater<int>()); //greater 사용
+        for(int i=0;i<v.size();i++) //출력
+        {
+            cout << v[i] << " ";
+        }
+        cout << endl;
+
+        vector<int>::iterator iter; //iterator(주소값) 사용
+        for(iter=v.begin();iter!=v.end();iter++) //*iter가 가르키는  원소 출력
+        {
+            cout << *iter << " ";
+        }
+        return 0;
+    }
+   
+4.vector의 요소 접근
 
     #include <iostream>
     #include <vector>
@@ -83,7 +128,7 @@
         return 0;
     }
 
-4.벡터의 용량
+5.벡터의 용량
     
     #include <iostream>
     #include <vector>
