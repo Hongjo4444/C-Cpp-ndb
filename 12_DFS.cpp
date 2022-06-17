@@ -1,5 +1,5 @@
 #include <iostream>
-#include <queue> //깊이 우선 탐색(최단거리 찾기(거리가 가까운 순서대로 출력됨))은 stack or 재귀함수 사용해야함
+#include <queue> //깊이 우선 탐색(최단거리 찾기(거리가 가까운 순서대로 출력됨))은 stack or 재귀함수(더 많이 쓰임) 사용해야함
 #include <vector>
 
 using namespace std;
