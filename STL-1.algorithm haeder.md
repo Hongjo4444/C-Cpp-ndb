@@ -5,7 +5,7 @@
 
     using namespace std;
 
-    int main(void)
+    int main()
     {
       int a[10]={9,3,5,4,1,10,8,6,7,2};
       sort(a,a+10); //시작 주소, 끝 주소 넣기(끝이 a+9가 아니고 a+10(원소 전체갯수)
@@ -23,7 +23,7 @@
 
     using namespace std;
 
-    int main(void)
+    int main()
     {
       int a[10]={9,3,5,4,1,10,8,6,7,2};
       sort(a,a+10,greater<int>()); //comapare함수 만드는것 대신 greater<int>() 사용
@@ -41,7 +41,7 @@
 
     using namespace std;
 
-    int main(void)
+    int main()
     {
       int a[10]={9,3,5,4,1,10,8,6,7,2};
 
@@ -58,7 +58,7 @@
 
     using namespace std;
 
-    int main(void)
+    int main()
     {
         vector<int> v;
 
