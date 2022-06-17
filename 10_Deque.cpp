@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(void)
+int main()
 {
     deque<int> d; //int 자료형 deque 생성
     // deque<int> d(5); //0으로 초기화된 size 5인 int 자료형 deque
