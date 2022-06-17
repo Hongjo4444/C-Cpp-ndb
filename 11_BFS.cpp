@@ -59,6 +59,6 @@ int main(void)
     a[4].push_back(7);
     a[7].push_back(4);
 
-    bfs(1);
+    bfs(1); //방문 경로:1-2-3-4-5-6-7
     return 0;
 }
