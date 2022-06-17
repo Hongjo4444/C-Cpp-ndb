@@ -1,5 +1,5 @@
 #include <iostream>
-#include <queue> //너비 우선 탐색(최단거리 찾기(거리가 가까운 순서대로 출력됨))은 queue를 사용해야함
+#include <queue> //너비 우선 탐색(최단거리 찾기(거리가 가까운 순서대로 출력됨))은 queue 사용해야함
 #include <vector>
 
 using namespace std;
