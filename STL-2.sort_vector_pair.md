@@ -5,7 +5,7 @@
 
     using namespace std;
 
-    int main(void)
+    int main()
     {
       int a[10]={9,3,5,4,1,10,8,6,7,2};
       sort(a,a+10); //시작 주소, 끝 주소 넣기(끝이 a+9가 아니고 a+10(원소 전체갯수)
@@ -13,6 +13,7 @@
       {
         cout << a[i] << " ";
       }
+      return 0;
     }
    
 
@@ -28,7 +29,7 @@
       return a<b; //a<b일때를 우선적으로 정렬(더 작은값이 앞으로 가는 오름차순 정렬)
     }
 
-    int main(void)
+    int main()
     {
       int a[10]={9,3,5,4,1,10,8,6,7,2};
       sort(a,a+10,compare);
@@ -36,6 +37,7 @@
       {
         cout << a[i] << " ";
       }
+      return 0;
     }
     
     
@@ -62,7 +64,7 @@
       }
     };
 
-    int main(void)
+    int main()
     {
       Student students[]=
       {
@@ -77,6 +79,7 @@
       {
         cout << students[i].name << " ";
       }
+      return 0;
     }
 
 
@@ -88,7 +91,7 @@
 
     using namespace std;
 
-    int main(void)
+    int main()
     {
         vector<pair<int,string> > v; //한 쌍(2개)의 데이터를 다루기위해 사용하는 라이브러리
         v.push_back(pair<int,string>(95,"홍")); //push_back():리스트의 마지막 부분에 삽입하는 vector에 붙어있는 함수
@@ -103,6 +106,7 @@
         {
             cout << v[i].second << " "; //second:두번째 값(여기에선 string)을 의미
         }
+        return 0;
     }
 
 
@@ -126,7 +130,7 @@
         }
     }
 
-    int main(void)
+    int main()
     {
         vector<pair<string,pair<int,int> > > v; //이중 pair(이름,성적,생년월일) 사용
         v.push_back(pair<string,pair<int,int> >("홍",pair<int,int>(95,19931214)));
@@ -141,4 +145,5 @@
         {
             cout << v[i].first << " "; //정렬된 학생의 이름만 출력
         }
+        return 0;
     }
