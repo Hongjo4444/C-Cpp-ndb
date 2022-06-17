@@ -30,7 +30,7 @@ void bfs(int start)
     }
 }
 
-int main(void)
+int main()
 {
     a[1].push_back(2); //간선의 정보 입력
     a[2].push_back(1);
