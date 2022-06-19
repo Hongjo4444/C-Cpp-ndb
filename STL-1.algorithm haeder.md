@@ -75,12 +75,12 @@
         }
         cout << endl;
 
-        unique(v.begin(),v.end()); //unique함수
-        for (int i = 0; i < v.size(); i++) //확인(반복되는 값 쓰레기값되고 뒤에 붙여짐)
-        {
-            cout << v[i] << " ";
-        }
-        cout << endl;
+        //unique(v.begin(),v.end()); //unique함수
+        //for (int i = 0; i < v.size(); i++) //확인(반복되는 값 쓰레기값되고 뒤에 붙여짐)
+        //{
+        //    cout << v[i] << " ";
+        //}
+        //cout << endl;
 
         v.erase(unique(v.begin(), v.end()),v.end()); //unique함수를 사용한 반복부분 삭제
         for (int i = 0; i < v.size(); i++) //확인
