@@ -112,7 +112,7 @@
 
     bool compare(pair<string, int> a, pair<string, int> b)
     {
-        return a.second > b.second; //Value로 정렬(부호로 오름차순, 내림차순 정렬)
+        return a.second > b.second; //Value로 정렬(부호 '<':오름차순(점점 커지게), '>':내림차순(점점 작아지게) 정렬)
     }
 
     int main()
