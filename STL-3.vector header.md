@@ -78,7 +78,7 @@ v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환
         return 0;
     }
    
-4.vector의 요소 접근
+3.vector의 요소 접근, 찾기
 
     #include <iostream>
     #include <vector>
@@ -97,7 +97,7 @@ v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환
         return 0;
     }
     
-3.vector에 요소 삽입,삭제(삽입과 삭제가 빈번히 일어날경우 vector보단 list나 deque를 사용하는 것이 바람직함)
+4.vector에 요소 삽입,삭제(삽입과 삭제가 빈번히 일어날경우 vector보단 list나 deque를 사용하는 것이 바람직함)
     
     #include <iostream>
     #include <vector>
@@ -111,7 +111,7 @@ v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환
         v.push_back(10);
         v.push_back(20); //백터의 마지막 부분에 새로운 요소 추가, v = { 10, 20 }
 
-        v.inset(v.begin() + 1, 100); //사용자가 원하는 위치에 요소 삽입, v = { 10, 100, 20 }
+        v.insert(v.begin() + 1, 100); //사용자가 원하는 위치에 요소 삽입, v = { 10, 100, 20 }
 
         v.pop_back(); //백터의 마지막 부분 제거, v = { 10, 100 }
 
