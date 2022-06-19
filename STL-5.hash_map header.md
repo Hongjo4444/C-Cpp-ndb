@@ -45,7 +45,7 @@
 
         cout << m["Alice"] << endl; //해당 key의 value값 조회
 
-        if (m.find("Alice") != m.end()) // 찾고자 하는 데이터가 있는 지 확인하기(데이터를 찾을 때 iterator을 사용)
+        if (m.find("Alice") != m.end()) // 찾고자 하는 데이터가 있는 지 확인하기(문자열을 찾았다면 해당 문자열의 시작 위치를 리턴하고, 그렇지 않을 경우 npos 를 리턴)
         {
           cout << "find" << endl;
         }
