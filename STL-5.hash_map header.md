@@ -138,7 +138,7 @@
         }
         cout << endl;
 
-        map<string,int,greater<string>> mv; // Value 오름차순 정렬(pair를 원소로 가지는 vector로 복사한 후 Value(second) 기준으로 정렬)
+        map<string,int> mv; // Value 오름차순 정렬(pair를 원소로 가지는 vector로 복사한 후 Value(second) 기준으로 정렬)
         mv["Hong"] = 10;
         mv["Jo"]++;
         mv["Alice"]=400;
