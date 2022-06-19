@@ -44,6 +44,10 @@
         m["Alice"]=400;
 
         cout << m["Alice"] << endl; //해당 key의 value값 조회
+        
+        cout << m.find("Alice")->first << endl; //찾아서 key값 출력하기
+        cout << m.find("Alice")->second << endl; //찾아서 value값 출력하기
+        cout << endl;
 
         if (m.find("Alice") != m.end()) // 찾고자 하는 데이터가 있는 지 확인하기(문자열을 찾았다면 해당 문자열의 시작 위치를 리턴)
         {
@@ -53,10 +57,6 @@
         {
           cout << "not find" << endl;
         }
-
-        cout << m.find("Alice")->first << endl; //찾아서 key값 출력하기
-        cout << m.find("Alice")->second << endl; //찾아서 value값 출력하기
-        cout << endl;
 
         return 0;
     }
