@@ -15,12 +15,18 @@
 
       vector<int> c = { 1, 2, 3}; //int형 백터 생성 후 1, 2, 3 으로 초기화
 
+      vector<int> copy_c={c.begin()+1,c.begin()+3}; //벡터 범위 복사
+      for(int i=0;i<copy_c.size();i++)
+      {
+        cout << copy_c[i] << " ";
+      }
+
       vector<int> d[] = {{ 1, 2}, {3, 4}}; //int형 백터 배열 생성(행은 가변이지만 열은 고정)
 
-      vector<vector<int> > d; //2차원 백터 생성(행과 열 모두 가변)
+      vector<vector<int> > e; //2차원 백터 생성(행과 열 모두 가변)
 
-      vector<int> e = { 1, 2, 3, 4, 5}; //백터 범위를 5로 지정하고 정수 10으로 초기화(output : 10 10 10 10 10)
-      e.assign(5, 10);
+      vector<int> f = { 1, 2, 3, 4, 5}; //백터 범위를 5로 지정하고 정수 10으로 초기화(output : 10 10 10 10 10)
+      f.assign(5, 10);
 
       return 0;
     }
