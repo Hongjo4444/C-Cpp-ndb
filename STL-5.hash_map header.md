@@ -143,7 +143,7 @@
         mv["Jo"]++;
         mv["Alice"]=400;
 
-        vector<pair<string,int>> mvv(mv.begin(), mv.end()); // map mv를 vector mvv에 복사(vector 헤더 필요)
+        vector<pair<string,int>> mvv(mv.begin(), mv.end()); // map mv를 vector mvv에 복사(map 상태로 정렬 못해서 pair vector로 바꿔서 정렬해야함!)
         sort(mvv.begin(),mvv.end(),compare); //Value 기준으로 정렬(compare 함수로 오름차순 or 내림차순 정렬)
         for(int i=0;i<mvv.size();i++)
         {
