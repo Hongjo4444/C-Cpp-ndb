@@ -38,7 +38,7 @@
     }
 
 3.stoi:문자열을 정수로 변환한다.(변환이 가능한 부분까지만 변환,부호 알아서 처리).  
-(atoi:정수를 문자열 변환, stoul:절댓값으로 변환, to_string:정수나 실수를 문자열 변환)
+(stoul:절댓값으로 변환, to_string:정수나 실수를 문자열 변환)
 
     #include <iostream>
     #include <string>
