@@ -82,6 +82,7 @@ v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환
 
     #include <iostream>
     #include <vector>
+    #include <algorithm>
 
     using namespace std;
 
@@ -93,10 +94,9 @@ v.rend() : revers end, 백터의 (시작 + 1) 지점을 끝 부분으로 반환
         cout << v.back() << endl; //output : 4
         cout << v.at(1) << endl; //output : 2, at은 범위를 검사하여 범위 밖의 요소에 접근 시 예외처리를 발생시킵니다. (std::out_of_range)
         cout << v[2] << endl; //output : 3​, [](operator [])는 범위검사를 하지 않으며 예외처리르 발생시키지 않습니다. 보통 []를 권장
-        
-        
-        
-        if (m.find("Alice") != m.end()) // 찾고자 하는 데이터가 있는 지 확인하기(문자열을 찾았다면 해당 문자열의 시작 위치를 리턴)
+
+        auto it=find(v.begin(),v.end(),3);
+        if(it!=v.end()) // 찾고자 하는 데이터가 있는 지 확인하기(문자열을 찾았다면 해당 문자열의 시작 위치를 리턴)
         {
           cout << "find" << endl;
         }
