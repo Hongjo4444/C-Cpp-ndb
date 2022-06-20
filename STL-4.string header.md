@@ -230,3 +230,26 @@
 
         return 0;
     }
+
+13.string.h 헤더파일 함수 사용을 위한 (strtok 등)
+
+    #include <iostream>
+    #include <string>
+    #include <string.h>
+
+    using namespace std;
+
+    int main()
+    {
+        string str_cpp="Hi Hello";
+
+        char str_c[10];
+        stpcpy(str_c,str_cpp.c_str()); //string.h 헤더의 strtok 쓰려면 c언어 char로 바꿔줘야함
+
+        string first=strtok(str_c," "); //출력 문자 설정은 c++ string으로 정의
+        string second=strtok(NULL," ");
+
+        cout << first << " " << second << endl;
+
+        return 0;
+    }
