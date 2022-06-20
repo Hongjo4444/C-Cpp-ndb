@@ -1,4 +1,4 @@
-1.Sort()함수 기본
+1.Sort() 기본 
 
     #include <iostream>
     #include <algorithm>
@@ -16,7 +16,7 @@
       return 0;
     }
     
-2.Sort()함수 내림차순 정렬
+2.Sort() 내림차순 정렬
 
     #include <iostream>
     #include <algorithm>
@@ -34,7 +34,7 @@
       return 0;
     }
                     
-3.Sort()함수 최댓값,최솟값 찾기
+3.최댓값,최솟값 찾기
                     
     #include <iostream>
     #include <algorithm>
@@ -110,6 +110,40 @@
 
         int counts=count(v.begin(),v.end(),3);
         cout << counts;
+
+        return 0;
+    }
+
+6.reverse 함수로 벡터,문자열 뒤집기
+
+    #include <iostream>
+    #include <algorithm>
+    #include <vector>
+    #include <string>
+
+    using namespace std;
+
+    int main()
+    {
+        vector<int> v={1,2,3,4};
+        for(int i=0;i<v.size();i++)
+        {
+            cout <<v[i] << " ";
+        }
+        cout << endl;
+
+        reverse(v.begin(),v.end());
+        for(int i=0;i<v.size();i++)
+        {
+            cout <<v[i] << " ";
+        }
+        cout << endl;
+
+        string str="abcde";
+        cout << str << endl;
+
+        reverse(str.begin(),str.end());
+        cout << str;
 
         return 0;
     }
