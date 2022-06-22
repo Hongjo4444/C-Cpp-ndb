@@ -43,7 +43,7 @@
         if(check_box==m*n) days=0;
         else
         {
-           while(!q.empty())
+           while(!q.empty()) //x,y 방향 잘보기
            {
                 days+=1;
                 int size_q=q.size();
