@@ -7,7 +7,7 @@
 
     using namespace std;
 
-    int d[1000001][2]={0};
+    long long int d[1000001][2]={0};
 
     long long int dp(int x)
     {
