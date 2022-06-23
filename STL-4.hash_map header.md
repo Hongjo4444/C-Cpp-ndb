@@ -128,7 +128,7 @@
         }
         cout << endl;
 
-        map<string,int,greater<string>> mg; // Key 내림차순 정렬(greater 사용)
+        map<string,int,greater<string>> mg; // Key 내림차순 정렬(선언할때 greater 사용)
         mg["Hong"] = 10;
         mg["Jo"]++;
         mg["Alice"]=400;
