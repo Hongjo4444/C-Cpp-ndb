@@ -174,7 +174,10 @@
       int a[10]={9,3,5,4,1,10,8,6,7,2};
 
       cout << *max_element(a,a+10) << endl; //범위 내에서 최댓값 찾기
+      cout << max_element(a.begin(),a.end())-a.begin() << endl; //최댓값 인덱스
+      
       cout << *min_element(a,a+10) << endl; //범위 내에서 최솟값 찾기
+      cout << min_element(a.begin(),a.end())-a.begin() << endl; //최솟값 인덱스
       return 0;
     }
     
