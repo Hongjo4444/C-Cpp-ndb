@@ -146,7 +146,7 @@
 
     int main()
     {
-        vector<pair<string,pair<int,int> > > v; //이중 pair(이름,성적,생년월일) 사용
+        vector<pair<string,pair<int,int> > > v; //이중 pair(이름,성적,생년월일) 사용(vector<pair<pair<int,int>,int>> v;랑 똑같은 형식)
         v.push_back(pair<string,pair<int,int> >("홍",pair<int,int>(95,19931214)));
         v.push_back(pair<string,pair<int,int> >("지",pair<int,int>(94,19931215)));
         v.push_back(pair<string,pair<int,int> >("호",pair<int,int>(94,19951216)));
