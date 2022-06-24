@@ -171,6 +171,13 @@
 
     int main()
     {
+      int a=2;
+      int b=3;
+      int c=1;
+      
+      cout << min(a,b);
+      cout << min({a,b,c}); //3개 이상 비교할때는 
+    
       int a[10]={9,3,5,4,1,10,8,6,7,2};
 
       cout << *max_element(a,a+10) << endl; //범위 내에서 최댓값 찾기
